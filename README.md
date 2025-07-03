@@ -1,5 +1,4 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/yourlogo.png" height="90" alt="CTF Challenge Platform logo"><br>
   <b>CTF Challenge Platform</b><br>
   <i>Crie, resolva e desafie hackers em um painel web de Capture The Flag — 100% Open Source</i>
 </p>
