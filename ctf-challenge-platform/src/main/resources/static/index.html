@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTF Challenge Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="neon">CTF Challenge Platform <span>🚩</span></h1>
+
+    <section id="challenges-section">
+        <h2>Available Challenges</h2>
+        <div id="challenges-list" class="card-grid"></div>
+    </section>
+
+    <section id="scoreboard-section">
+        <h2>🏆 Scoreboard</h2>
+        <table id="scoreboard-table">
+            <thead>
+            <tr><th>User</th><th>Challenge</th><th>Time</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+</div>
+
+<!-- Modal Flag Submit -->
+<div id="flag-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3 id="modal-title"></h3>
+        <form id="flag-form">
+            <input type="text" id="modal-username" placeholder="Username" required>
+            <input type="text" id="modal-flag" placeholder="Flag" required>
+            <button type="submit">Submit Flag</button>
+            <div id="flag-result"></div>
+        </form>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  background: #16161a;
+  color: #f5f5f5;
+  font-family: 'Fira Mono', monospace;
+  min-height: 100vh;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: rgba(20,22,40,0.98);
+  border-radius: 16px;
+  box-shadow: 0 0 32px #25ffe0bb;
+  padding: 40px 28px 32px;
+}
+
+h1.neon {
+  font-family: 'Orbitron', monospace;
+  font-size: 2.4rem;
+  color: #25ffe0;
+  text-shadow: 0 0 16px #25ffe0, 0 0 60px #25ffe0aa;
+  text-align: center;
+  margin-bottom: 18px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
+
+h2 {
+  margin-top: 32px;
+  color: #eee;
+  text-shadow: 0 0 6px #0ff8, 0 0 22px #09e2a6;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+  margin-top: 18px;
+}
+
+.card {
+  background: linear-gradient(120deg, #21244b 80%, #0ff2 120%);
+  border-radius: 14px;
+  box-shadow: 0 0 22px #09e2a633;
+  padding: 30px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.13s, box-shadow 0.13s;
+  border: 1.5px solid #25ffe0;
+  position: relative;
+  /* Adicione para evitar overflow */
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.card * {
+  /* Garante que nenhum filho vai vazar texto */
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.card .title {
+  font-size: 1.14rem;
+  font-weight: 700;
+  color: #25ffe0;
+  margin-bottom: 4px;
+  letter-spacing: 1.5px;
+}
+
+.card .desc {
+  font-size: 1.01rem;
+  color: #e4e8eb;
+  margin-bottom: 12px;
+  max-width: 100%;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.card .meta {
+  font-size: 0.94rem;
+  color: #c4ffe3;
+  margin-bottom: 12px;
+}
+
+.card .btn {
+  background: #25ffe0;
+  color: #18243d;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 22px;
+  margin-top: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 12px #0ff6;
+  transition: background 0.15s, color 0.12s;
+  outline: none;
+}
+.card .btn:hover {
+  background: #0df8c2;
+  color: #191e33;
+  box-shadow: 0 0 24px #25ffe0cc;
+  letter-spacing: 0.7px;
+}
+
+/* Scoreboard */
+#scoreboard-table {
+  margin-top: 12px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.01rem;
+  background: #222845b3;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #0ff3;
+}
+#scoreboard-table th, #scoreboard-table td {
+  padding: 10px 14px;
+  text-align: left;
+}
+#scoreboard-table thead tr {
+  background: #151b2e;
+  color: #25ffe0;
+  font-weight: 700;
+  border-bottom: 2px solid #25ffe0bb;
+}
+#scoreboard-table tbody tr {
+  border-bottom: 1px solid #23282f;
+}
+#scoreboard-table tbody tr:last-child {
+  border-bottom: none;
+}
+#scoreboard-table td {
+  color: #d3e8e6;
+}
+#scoreboard-table td:first-child {
+  font-weight: bold;
+  color: #25ffe0;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 22;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(0,10,18,0.78);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #232949;
+  color: #e9ffe8;
+  padding: 28px 30px 22px;
+  border-radius: 14px;
+  box-shadow: 0 0 24px #25ffe0bb;
+  max-width: 380px;
+  width: 100%;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: #25ffe0;
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: monospace;
+  transition: color 0.12s;
+}
+.close-btn:hover { color: #0ffb; }
+#flag-form input {
+  background: #181f2a;
+  color: #def;
+  border: 1.3px solid #25ffe0bb;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 1rem;
+  margin: 8px 0 11px;
+  padding: 9px 14px;
+  width: 100%;
+  outline: none;
+  transition: border 0.14s;
+}
+#flag-form input:focus {
+  border: 1.5px solid #25ffe0;
+}
+#flag-form button {
+  background: #25ffe0;
+  color: #232949;
+  font-weight: bold;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 0;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 0 18px #25ffe0bb;
+  margin-top: 10px;
+  transition: background 0.13s, color 0.1s;
+}
+#flag-form button:hover {
+  background: #0df8c2;
+  color: #16161a;
+}
+#flag-result {
+  margin-top: 14px;
+  font-size: 1.01rem;
+  font-weight: bold;
+}
+
+.modal.hidden { display: none; }
+.modal.show { display: flex; }
+
