@@ -1,33 +1,74 @@
-<p align="center">
-  <b>CTF Challenge Platform</b><br>
-  <i>Crie, resolva e desafie hackers em um painel web de Capture The Flag — 100% Open Source</i>
-</p>
+# CTF Challenge Platform
+
+Create, solve, and challenge hackers in a Capture The Flag web dashboard — 100% Open Source.
 
 ---
 
-## 🕶️ Sobre o Projeto
+## 🕶️ About the Project
 
-> Plataforma web para **CTF (Capture The Flag)**   
-> Adicione desafios, publique flags, desafie amigos ou seu time!  
-> Feito em **Java + Spring Boot** (backend) e HTML/CSS/JS puro (frontend) com visual dark neon.
+A web-based platform for CTF (Capture The Flag) competitions.  
+Add custom challenges, publish flags, and invite friends or your team to compete!
 
-- Desafios customizáveis (título, descrição, categoria, dificuldade, flag)
-- Submissão de flags com scoreboard em tempo real
-- Criação e resolução de desafios direto do painel
-- MVP pronto pra deploy, uso pessoal, eventos, bootcamps, grupos, etc
+- **Fully customizable challenges:** title, description, category, difficulty, flag
+- **Flag submission & live scoreboard**
+- **Create and solve challenges directly from the dashboard**
+- **MVP ready for deployment — perfect for personal use, events, bootcamps, groups, and more**
 
----
-
-## 🚀 Tecnologias
-
-- **Backend:** Java 21, Spring Boot, JPA, H2 (memória, sem dependência externa)
-- **Frontend:** HTML, CSS, JavaScript puro
-- **API REST** para integração fácil
-- **Deploy:** compatível com Heroku, AWS, Render, Railway, etc
+Built with a dark neon hacker-inspired UI.
 
 ---
 
-## 📦 Como rodar
+## 🚀 Tech Stack
+
+- **Backend:** Java 21, Spring Boot, JPA, H2 (in-memory, zero external dependencies)
+- **Frontend:** HTML, CSS, pure JavaScript
+- **REST API** for easy integration with other platforms or automations
+- **Deployment:** Compatible with Heroku, AWS, Render, Railway, and more
+
+---
+
+## 📦 How to Run
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/BlackBoxerX/ctf-challenge-platform.git
+    cd ctf-challenge-platform
+    ```
+
+2. **Run the application:**
+    - Use your favorite Java IDE (IntelliJ, Eclipse, VS Code), or via CLI:
+    ```bash
+    ./mvnw spring-boot:run
+    ```
+    - Or, build and run the jar:
+    ```bash
+    ./mvnw clean package
+    java -jar target/*.jar
+    ```
+
+3. **Access the platform:**
+    - Open your browser at [http://localhost:8080](http://localhost:8080)
+
+---
+
+## 🏁 Features Overview
+
+- Real-time scoreboard and flag submission
+- Custom challenges (add/edit/remove) via dashboard
+- Categories, difficulty levels, and detailed descriptions
+- Easy to deploy and extend
+
+---
+
+## 📜 License
+
+MIT License — free for personal or commercial use.
+
+---
+
+> Ready for your next hacking competition?  
+> Launch your own CTF in seconds — solo or with your team!
+
 
 1. **Clone o projeto:**
    ```sh
